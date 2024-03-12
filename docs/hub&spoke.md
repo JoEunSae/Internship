@@ -1,4 +1,4 @@
-# Hub & Spoke
+# Hub & Spoke 네트워크
 
 ## Hub & Spoke 란?
 
