@@ -27,6 +27,13 @@
     - VNet 간: VPN 게이트웨이와 VNet 간 연결 유형을 사용하는 다른 Azure VPN 게이트웨이 간의 IPsec/IKE VPN 터널 연결
     - S2S: VPN Gateway와 다른 Azure VPN Gateway 간의 IPsec/IKE VPN 터널 연결입니다. 이 유형의 연결은 VNet 간 아키텍처에서 사용되는 경우 VPN 게이트웨이 간의 연결 외에도 게이트웨이에 대한 크로스-프레미스 연결을 허용하는 IPsec(사이트 간) 연결 형식을 사용합니다.
 
+3. Peering이란?
+- 가상 네트워크 피어링을 사용하면 Azure에서 두 개 이상의 가상 네트워크를 원활하게 연결할 수 있다.
+- 피어링된 가상 네트워크에 있는 가상 머신 간의 트래픽은 Microsoft 백본 인프라를 사용한다.
+
+4. VNet 간 Peering과 VNet 간 VPN Gateway 차이
+- Peering
+  - 
 
 
 
