@@ -20,9 +20,9 @@
   - 공용 인터넷을 통해 Azure 가상 네트워크와 온-프레미스 위치 간에 암호화된 트래픽을 보내는 데 사용할 수 있다.
 
 - VPN Gateway를 사용하는 이유?
-  -  Azure 가상 네트워크와 온-프레미스
+  - Azure 가상 네트워크와 온-프레미스
     - S2S : VPN 게이트웨이와 온-프레미스 VPN 디바이스 간의 크로스-프레미스 IPsec/IKE VPN 터널 연결
-    - P2S : OpenVPN, IKEv2 또는 SSTP를 통해 VPN. 이러한 유형의 연결을 사용하면 회의나 집 등 원격 위치에서 가상 네트워크에 연결할 수 있다.
+    - P2S : OpenVPN, IKEv2 또는 SSTP를 통해 VPN. 이러한 유형의 연결을 사용하면 회의나 집 등 원격 위치에서 가상 네트워크에 연결할 수 있다. 
   - 가상 네트워크 간
     - VNet 간: VPN 게이트웨이와 VNet 간 연결 유형을 사용하는 다른 Azure VPN 게이트웨이 간의 IPsec/IKE VPN 터널 연결
     - S2S: VPN Gateway와 다른 Azure VPN Gateway 간의 IPsec/IKE VPN 터널 연결입니다. 이 유형의 연결은 VNet 간 아키텍처에서 사용되는 경우 VPN 게이트웨이 간의 연결 외에도 게이트웨이에 대한 크로스-프레미스 연결을 허용하는 IPsec(사이트 간) 연결 형식을 사용합니다.
