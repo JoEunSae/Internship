@@ -43,6 +43,7 @@
  
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/5b5d87a9-ae3a-45c4-b120-ede92710683e)
 
+**주소 대역이 겹치지 않게 설계해야 한다.**
 
 
 
