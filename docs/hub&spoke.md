@@ -33,7 +33,7 @@
 
 4. VNet 간 Peering과 VNet 간 VPN Gateway 차이
 - Peering
-  - 두 가상 네트워크 간의 간단한 통신을 설정하며, 트래픽은 Azure의 내부를 통해 라우팅됩니다. VPN과 달리 추가 비용이 발생하지 않는다.
+  - 두 가상 네트워크 간의 간단한 통신을 설정하며, 트래픽은 Azure의 내부를 통해 라우팅. VPN과 달리 추가 비용이 발생하지 않는다.
   
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/0c343a70-260c-424c-8aa9-5f558cc68b86)
 
@@ -45,6 +45,11 @@
 
 **주소 대역이 겹치지 않게 설계해야 한다.**
 
+5. VPN Gateway 생성
+
+![image](https://github.com/JoEunSae/Internship/assets/83803199/c837609f-78d8-4f1e-b6b9-0653ed8e2c43)
+
+**On-Premise와 VNet간의 연결에서는 Public IP 사용이 일반적**
 
 
 
