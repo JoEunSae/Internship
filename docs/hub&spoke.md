@@ -47,10 +47,25 @@
 
 5. VPN Gateway 생성
 
-![image](https://github.com/JoEunSae/Internship/assets/83803199/c837609f-78d8-4f1e-b6b9-0653ed8e2c43)
+![image](https://github.com/JoEunSae/Internship/assets/83803199/0768a4e2-89ce-4676-b0b2-2b550c354155)
+
+- Active-Active 모드 : 여러 리전 간에 VPN Gateway를 활용하여 고가용성 및 부하 분산을 달성하는 모드
+- BGP (Border Gateway Protocol) : 가상 네트워크와 온프레미스 네트워크 간의 동적 경로 교환을 지원한다. BGP는 다양한 네트워크 구성에서 라우팅 정보를 효율적으로 교환하는 데 사용되는 프로토콜
 
 **On-Premise와 VNet간의 연결에서는 Public IP 사용이 일반적**
 
+6. Local Network Gateway 생성
+
+- Local Network Gateway
+  - 라우팅 목적으로 온-프레미스 위치(사이트)를 나타내는 특정 개체이다.
+  -  Azure가 참조할 수 있는 사이트 이름을 지정한 다음, 연결을 만들 온-프레미스 VPN 디바이스의 IP 주소를 지정한다.
+
+
+
+
+
+  
+![image](https://github.com/JoEunSae/Internship/assets/83803199/240c3fb9-cf04-4ad1-8630-77bd0591a3de)
 
 
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/d22f9cf0-4b68-4c82-87a2-d6b466f36edf)
@@ -60,4 +75,7 @@
 ref) <br>
 https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke?tabs=cli <Br>
 https://learn.microsoft.com/ko-kr/azure/cloud-adoption-framework/ready/azure-best-practices/hub-spoke-network-topology <Br>
-https://learn.microsoft.com/ko-kr/azure/architecture/networking/guide/private-link-hub-spoke-network
+https://learn.microsoft.com/ko-kr/azure/architecture/networking/guide/private-link-hub-spoke-network <br>
+https://azure.microsoft.com/en-us/blog/vnet-peering-and-vpn-gateways/ <br>
+https://learn.microsoft.com/ko-kr/azure/virtual-network/manage-route-table <br>
+https://learn.microsoft.com/ko-kr/azure/vpn-gateway/tutorial-site-to-site-portal
