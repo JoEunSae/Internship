@@ -60,7 +60,12 @@
   - 라우팅 목적으로 온-프레미스 위치(사이트)를 나타내는 특정 개체이다.
   -  Azure가 참조할 수 있는 사이트 이름을 지정한 다음, 연결을 만들 온-프레미스 VPN 디바이스의 IP 주소를 지정한다.
 
+**Vnet1과 Vnet2에 각각 VPN Gateway와 Local Network Gateway가 필요**
 
+![image](https://github.com/JoEunSae/Internship/assets/83803199/88f0cb14-3e24-4c85-9628-0ac43c61ceae)
+
+- Vnet1의 **VPNGateway의 공용 IP**와 **Vnet1의 주소공간**을 담은 Local Network Gateway와 Vnet2의 VPN Gateway연결
+- Vnet2의 **VPNGateway의 공용 IP**와 **Vnet2의 주소공간**을 담은 Local Network Gateway와 Vnet1의 VPN Gateway연결
 
 
 
