@@ -10,11 +10,11 @@
 
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/883a96dd-0f42-46a1-9dc0-3d7bac5b4fb9)
 
-1. 네트워크 설계
+### 1. 네트워크 설계
 
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/b26ece82-d03e-4253-86ec-6cea3b791f2e)
 
-2. VPN Gateway
+### 2. VPN Gateway
 - VPN Gateway란?
   - Microsoft 네트워크를 통해 Azure 가상 네트워크 간에 암호화된 트래픽을 보낼 수도 있다.
   - 공용 인터넷을 통해 Azure 가상 네트워크와 온-프레미스 위치 간에 암호화된 트래픽을 보내는 데 사용할 수 있다.
@@ -27,11 +27,11 @@
     - VNet 간: VPN 게이트웨이와 VNet 간 연결 유형을 사용하는 다른 Azure VPN 게이트웨이 간의 IPsec/IKE VPN 터널 연결
     - S2S: VPN Gateway와 다른 Azure VPN Gateway 간의 IPsec/IKE VPN 터널 연결입니다. 이 유형의 연결은 VNet 간 아키텍처에서 사용되는 경우 VPN 게이트웨이 간의 연결 외에도 게이트웨이에 대한 크로스-프레미스 연결을 허용하는 IPsec(사이트 간) 연결 형식을 사용합니다.
 
-3. Peering이란?
+### 3. Peering이란?
 - 가상 네트워크 피어링을 사용하면 Azure에서 두 개 이상의 가상 네트워크를 원활하게 연결할 수 있다.
 - 피어링된 가상 네트워크에 있는 가상 머신 간의 트래픽은 Microsoft 백본 인프라를 사용한다.
 
-4. VNet 간 Peering과 VNet 간 VPN Gateway 차이
+### 4. VNet 간 Peering과 VNet 간 VPN Gateway 차이
 - Peering
   - 두 가상 네트워크 간의 간단한 통신을 설정하며, 트래픽은 Azure의 내부를 통해 라우팅. VPN과 달리 추가 비용이 발생하지 않는다.
   
@@ -45,7 +45,7 @@
 
 **주소 대역이 겹치지 않게 설계해야 한다.**
 
-5. VPN Gateway 생성
+### 5. VPN Gateway 생성
 
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/0768a4e2-89ce-4676-b0b2-2b550c354155)
 
@@ -54,7 +54,7 @@
 
 **On-Premise와 VNet간의 연결에서는 Public IP 사용이 일반적**
 
-6. Local Network Gateway 생성
+### 6. Local Network Gateway 생성
 
 - Local Network Gateway
   - 라우팅 목적으로 온-프레미스 위치(사이트)를 나타내는 특정 개체이다.
@@ -67,7 +67,11 @@
 - Vnet1의 **VPNGateway의 공용 IP**와 **Vnet1의 주소공간**을 담은 Local Network Gateway와 Vnet2의 VPN Gateway연결
 - Vnet2의 **VPNGateway의 공용 IP**와 **Vnet2의 주소공간**을 담은 Local Network Gateway와 Vnet1의 VPN Gateway연결
 
-7. Vnet2와 Vnet3 Peering
+![image](https://github.com/JoEunSae/Internship/assets/83803199/a677d7a2-2c68-4375-b32f-2d71c9ae6a20)
+
+**Vnet2의 정보를 담는 LocalGateway에는 Vnet3의 주소 대역도 함께 담아야 한다.**
+
+### 7. Vnet2와 Vnet3 Peering
 
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/5ab1ece3-018c-4805-b9fd-fc73706afef6)
 
@@ -75,22 +79,41 @@
 
 **Peering생성시 반드시 Vnet2에서 Vnet3로 Vnet3에서 Vnet2로 트래픽이 전달될 수 있도록 설정해주어야 한다.**
 
-8. Firewall 생성
+### 8. Firewall 생성
 
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/cd11647d-a61f-480d-85af-b46a0d750b78)
 
-**해당 Vnet에 반드시 AzureFirewallSubnet이 존재해야한다.
+**해당 Vnet에 반드시 AzureFirewallSubnet이 존재해야한다.**
+
+#### Firewall의 네트워크 규칙 컬렉션 설정
+
+![image](https://github.com/JoEunSae/Internship/assets/83803199/0ad3a106-1224-415b-bc60-50bf476dc0ea)
+
+- Source : 출발지 네트워크 대역
+- 대상 주소 : 목적지 네트워크 대역
+
+
+### 9. Routing Table 생성
+- Routing Table생성 후 **Subnet에 연**결하고 **경로** 생성
+
+![image](https://github.com/JoEunSae/Internship/assets/83803199/7273d66f-da0a-4a63-bc22-b002a0b4e4bc)
+
+- 대상 IP 주소 : 목적지의 주소 공간
+- 다음 홉 주소 : Firewall의 **사설 IP**
+
+**Vnet2와 Vnet3모두 Routing Table생성**
 
 
 
-10. Routing Table 생성
+### 10. Ping Test
 
-![image](https://github.com/JoEunSae/Internship/assets/83803199/9375cd0a-739a-47d0-b608-2395738b96ba)
-![image](https://github.com/JoEunSae/Internship/assets/83803199/b105c0fc-8a96-427f-b0e2-a14d50eac0eb)
+**Vnet1의 VM에서 Vnet3의 VM으로 Ping**
 
-**RT을 생성 후, Subnet에 연결하고 경로 설정**
+![image](https://github.com/JoEunSae/Internship/assets/83803199/67c94dcb-730c-4375-954e-e403c5e4bafb)
 
+**Vnet3의 VM에서 Vnet1의 VM으로 Ping**
 
+![image](https://github.com/JoEunSae/Internship/assets/83803199/eed42383-a603-41d6-984a-a12ff76bd871)
 
 
 
