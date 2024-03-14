@@ -67,6 +67,13 @@
 - Vnet1의 **VPNGateway의 공용 IP**와 **Vnet1의 주소공간**을 담은 Local Network Gateway와 Vnet2의 VPN Gateway연결
 - Vnet2의 **VPNGateway의 공용 IP**와 **Vnet2의 주소공간**을 담은 Local Network Gateway와 Vnet1의 VPN Gateway연결
 
+7. Vnet2와 Vnet3 Peering
+
+![image](https://github.com/JoEunSae/Internship/assets/83803199/78fdd0c5-5cdc-4347-b9b4-1ad932ed18bc)
+
+![image](https://github.com/JoEunSae/Internship/assets/83803199/93b9ab6f-ef71-42d6-8660-458561675c94)
+
+**이렇게 연결하면 Vnet1->Vnet2와 Vnet2 -> Vnet3는 가능하지만 Vnet1 -> Vnet3는 X**
 
 
   
