@@ -69,19 +69,29 @@
 
 7. Vnet2와 Vnet3 Peering
 
-![image](https://github.com/JoEunSae/Internship/assets/83803199/78fdd0c5-5cdc-4347-b9b4-1ad932ed18bc)
+![image](https://github.com/JoEunSae/Internship/assets/83803199/5ab1ece3-018c-4805-b9fd-fc73706afef6)
 
-![image](https://github.com/JoEunSae/Internship/assets/83803199/93b9ab6f-ef71-42d6-8660-458561675c94)
+![image](https://github.com/JoEunSae/Internship/assets/83803199/7e81c1ab-9ecc-42d8-a744-349e5ecc6569)
 
-**이렇게 연결하면 Vnet1->Vnet2와 Vnet2 -> Vnet3는 가능하지만 Vnet1 -> Vnet3는 X**
+**Peering생성시 반드시 Vnet2에서 Vnet3로 Vnet3에서 Vnet2로 트래픽이 전달될 수 있도록 설정해주어야 한다.**
+
+8. Firewall 생성
+
+![image](https://github.com/JoEunSae/Internship/assets/83803199/cd11647d-a61f-480d-85af-b46a0d750b78)
+
+**해당 Vnet에 반드시 AzureFirewallSubnet이 존재해야한다.
 
 
-  
-![image](https://github.com/JoEunSae/Internship/assets/83803199/240c3fb9-cf04-4ad1-8630-77bd0591a3de)
+
+10. Routing Table 생성
+
+![image](https://github.com/JoEunSae/Internship/assets/83803199/9375cd0a-739a-47d0-b608-2395738b96ba)
+![image](https://github.com/JoEunSae/Internship/assets/83803199/b105c0fc-8a96-427f-b0e2-a14d50eac0eb)
+
+**RT을 생성 후, Subnet에 연결하고 경로 설정**
 
 
-![image](https://github.com/JoEunSae/Internship/assets/83803199/d22f9cf0-4b68-4c82-87a2-d6b466f36edf)
-![image](https://github.com/JoEunSae/Internship/assets/83803199/9ff22cc4-0864-4708-b81c-5a42363fda46)
+
 
 
 ref) <br>
@@ -90,4 +100,5 @@ https://learn.microsoft.com/ko-kr/azure/cloud-adoption-framework/ready/azure-bes
 https://learn.microsoft.com/ko-kr/azure/architecture/networking/guide/private-link-hub-spoke-network <br>
 https://azure.microsoft.com/en-us/blog/vnet-peering-and-vpn-gateways/ <br>
 https://learn.microsoft.com/ko-kr/azure/virtual-network/manage-route-table <br>
-https://learn.microsoft.com/ko-kr/azure/vpn-gateway/tutorial-site-to-site-portal
+https://learn.microsoft.com/ko-kr/azure/vpn-gateway/tutorial-site-to-site-portal <br>
+https://learn.microsoft.com/ko-kr/azure/firewall/firewall-multi-hub-spoke
