@@ -9,3 +9,7 @@
 
 ## Azure 3Tier Architecture
 - [3Tier Architecture](./docs/3tier.md)
+
+## Azure 프라이빗 엔드포인트를 사용하여 Azure SQL 서버에 연결
+- [3Tier Architecture](./docs/Private_Endpoint.md)
+
