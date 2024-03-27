@@ -26,3 +26,7 @@
 **FrontEnd 정적웹앱 서비스의 요청에 대한 cors허용**
 
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/e8814523-41c8-48a5-950c-6d52c26ad5f0)
+
+## 3. Frontend 정적웹앱 생성
+
+![image](https://github.com/JoEunSae/Internship/assets/83803199/812b8dca-f6a4-44a1-8f2e-106f836c0d4e)
