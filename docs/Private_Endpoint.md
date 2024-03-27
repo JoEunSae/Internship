@@ -1,4 +1,4 @@
-# Private Endpoint를 통해 Azure SQL서버에 연결하기
+![image](https://github.com/JoEunSae/Internship/assets/83803199/37a34c85-38cc-43ae-a32e-23d59cf68f56)# Private Endpoint를 통해 Azure SQL서버에 연결하기
 
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/f5a64105-10af-482d-859f-92118caf7159)
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/3102a344-b3d5-43b2-80da-75dd97dc7174)
@@ -36,7 +36,10 @@
 
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/f201610e-aff1-4c5f-b327-1089ee81464b)
 
+**Private Endpoint와 통합된 Private DNS주소를 nslookup을 통해 Private IP확인**
+![image](https://github.com/JoEunSae/Internship/assets/83803199/742efd0b-0bf1-403a-8529-1b00fde9079d)
 
+![image](https://github.com/JoEunSae/Internship/assets/83803199/92ba8d12-e14d-42b5-823d-91c201cbf655)
 
 
 
