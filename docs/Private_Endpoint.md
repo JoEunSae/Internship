@@ -1,4 +1,4 @@
-![image](https://github.com/JoEunSae/Internship/assets/83803199/37a34c85-38cc-43ae-a32e-23d59cf68f56)# Private Endpoint를 통해 Azure SQL서버에 연결하기
+# Private Endpoint를 통해 Azure SQL서버에 연결하기
 
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/f5a64105-10af-482d-859f-92118caf7159)
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/3102a344-b3d5-43b2-80da-75dd97dc7174)
