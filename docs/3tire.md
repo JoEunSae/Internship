@@ -1,6 +1,7 @@
 # 3Tire Architecture
 
-![image](https://github.com/JoEunSae/Internship/assets/83803199/a782cf9c-0ed0-4217-8ae9-78a8141fcd7f)
+![image](https://github.com/JoEunSae/Internship/assets/83803199/df16a8f1-7111-49f6-a87c-0b60fea5f7f8)
+
 
 ## 1.Azure Database for MySQL Server생성
 
