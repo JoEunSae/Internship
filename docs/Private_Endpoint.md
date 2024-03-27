@@ -41,10 +41,14 @@
 
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/92ba8d12-e14d-42b5-823d-91c201cbf655)
 
+### SQL Server 명령줄 도구 sqlcmd 밒 bcp를 설치하여 SQL Server에 연결
+https://learn.microsoft.com/ko-kr/azure/private-link/tutorial-private-endpoint-sql-portal
 
-
+![image](https://github.com/JoEunSae/Internship/assets/83803199/d5a5fe29-0342-4d48-98f5-580e25b00d84)
+`sqlcmd -S 'PrivateEndpoint와 통합한 Private DNS주소' -U '관리자 이름' -P '비밀번호`
 
 ref)<br>
 https://learn.microsoft.com/ko-kr/azure/private-link/tutorial-private-endpoint-sql-portal<br>
 https://learn.microsoft.com/ko-kr/azure/bastion/bastion-overview<br>
 https://learn.microsoft.com/ko-kr/azure/private-link/private-endpoint-overview<br>
+https://learn.microsoft.com/ko-kr/sql/linux/sql-server-linux-setup-tools?view=sql-server-ver16&tabs=ubuntu-install
