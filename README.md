@@ -13,3 +13,5 @@
 ## Azure 프라이빗 엔드포인트를 사용하여 Azure SQL 서버에 연결
 - [프라이빗 엔드포인트로 Azure SQL 서버에 연결](./docs/Private_Endpoint.md)
 
+## Azure DNS
+- [Azure DNS](./docs/dns.md)
