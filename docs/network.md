@@ -1,5 +1,29 @@
 # Network
 
+## OSI 7 Layer
+![image](https://github.com/JoEunSae/Internship/assets/83803199/f4e96cd8-7fe7-430b-85fb-6c6f5dd396a9)
+
+### OSI 7 Layer란?
+- 국제표준화기구(ISO)에서 개발한 모델로, 컴퓨터 네트워크 프로토콜 디자인과 통신을 계층으로 나누어 설명한 것.
+- 각 계층은 하위 계층의 기능만을 이용하고, 상위 계층에게 기능을 제공한다.
+
+#### Application Layer(7 Layer)
+- 사용자가 UI로 접하는 응용 프로그램과 관련된 계층으로 HTTP,FTP,DHCP,SMTP,DNS 등이 있다. 여기에 속한 프로토콜들은 어떠한 방법으로든 사용자와 직접 접하게 된다.
+- (Data + HTTP Header)
+
+#### Transport Layer(4 Layer)
+- 송신자와 수신자의 논리적 연결을 담당하는 부분으로, 신뢰성 있는 연결을 유지할 수 있도록 도와준다.
+- Endpoint(사용지) 간의 연결을 생성하고 데이터를 얼마나 보냈는지 얼마나 받았는지, 제대로 받았는지 등을 확인한다. TCP와 UDP가 대표적
+- (Data + HTTP Header + TCP Header)
+
+#### Network Layer(3 Layer)
+- IP(Internet Protocol)이 활용되는 부분으로, 한 Endpoint가 다른 Endpoint로 가조가 할 경우, 경로와 목적지를 찾아준다. 이를 Routing이라고 하며 대역이 다른
+IP들이 목적지를 향해 제대로 찾아갈 수 있도록 돕는 역할을 합니다.
+
+#### DataLink Layer(2 Layer)
+- 같은 네트워크 대역을 사용하는 단말들에 대해 신뢰성 있는 전송을 보장한다.
+- 즉 'MAC adress'를 활용하여 같은 구간 내의 Endpoint 혹은 Switching
+
 ## NAT
 
 ### NAT란?
@@ -63,9 +87,7 @@
 - 패킷의 애플리케이션 계층 정보를 분석해야 하기 때문에 L4 로드 밸런서보다 처리 시간이 더 걸린다.
 - ex) 웹 서비스, API 게이트웨이, 콘텐츠 전송 네트워크(CDN)
 
-
 **상위 계층을 활용할 수 있는 장비들은 모두 하위 계층 또한 이해하고 활용할 줄 알아야 한다.**
-
 
 
 
