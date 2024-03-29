@@ -13,7 +13,7 @@
 
 #### Transport Layer(4 Layer)
 - 송신자와 수신자의 논리적 연결을 담당하는 부분으로, 신뢰성 있는 연결을 유지할 수 있도록 도와준다.
-- Endpoint(사용지) 간의 연결을 생성하고 데이터를 얼마나 보냈는지 얼마나 받았는지, 제대로 받았는지 등을 확인한다. TCP와 UDP가 대표적
+- Endpoint(사용자) 간의 연결을 생성하고 데이터를 얼마나 보냈는지 얼마나 받았는지, 제대로 받았는지 등을 확인한다. TCP와 UDP가 대표적
 - (Data + HTTP Header + TCP Header)
 
 #### Network Layer(3 Layer)
