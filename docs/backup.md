@@ -25,7 +25,6 @@
 
 ![image](https://github.com/JoEunSae/Internship/assets/83803199/b0f06a2c-035b-4e9a-a1d1-78c79de397f6)
 
-
 ref) <br>
 https://azure.microsoft.com/ko-kr/pricing/details/cosmos-db/autoscale-provisioned/ <br>
 https://learn.microsoft.com/ko-kr/azure/cosmos-db/continuous-backup-restore-introduction <br>
@@ -34,4 +33,19 @@ https://learn.microsoft.com/ko-kr/azure/cosmos-db/periodic-backup-restore-introd
 
 ## Appservice Backup
 
+### 자동 백업
+- App Service에서 자동 백업을 설정하여 시스템이 일정한 주기로 백업을 생성합니다.
+- 사용자는 별도의 구성이나 작업을 수행할 필요가 없습니다.
+- 백업 주기와 보관 기간을 설정할 수 있으며, 백업 데이터는 Azure Sotrage에 저장됩니다.
 
+
+### 사용자 지정 백업
+- 사용자 지정 백업은 사용자가 직접 설정하고 관리하는 백업입니다.
+- 사용자는 필요할 때마다 백업을 생성하고, 백업을 수동으로 관리하며, 백업 데이터를 자체 관리합니다.
+- 유연성이 높으며 특정 요구 사항에 맞게 조정할 수 있습니다.
+
+![image](https://github.com/JoEunSae/Internship/assets/83803199/eeb65f23-b6f9-4e7a-80e9-0824459d919f)
+
+ref) <br>
+https://learn.microsoft.com/ko-kr/azure/app-service/manage-backup?tabs=portal#back-up--restore-vs-disaster-recovery <br>
+https://learn.microsoft.com/ko-kr/troubleshoot/azure/app-service/backing-up-restoring-and-cloning-microsoft-azure-app-services
