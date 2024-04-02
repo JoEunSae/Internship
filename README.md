@@ -18,3 +18,6 @@
 
 ## 네트워크
 - [Network](./docs/network.md)
+
+## Azure 백업
+- [Backup](./docs/backup.md)
