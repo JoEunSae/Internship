@@ -21,3 +21,6 @@
 
 ## Azure 백업
 - [Backup](./docs/backup.md)
+
+## Azure Landingzone
+- [Landingzone](./docs/landingzone.md)
