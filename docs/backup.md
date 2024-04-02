@@ -22,7 +22,7 @@
 - 지정된 프로비전된 처리량 컨테이너 또는 공유 처리량 데이터베이스의 기존 스냅샷을 30일 동안 유지
 - 실제 데이터는 Cosmos DB내에, 백업은 동일지역 Azure Blob Storage에 GRS로 
 
-ref)
+ref) <br>
 https://azure.microsoft.com/ko-kr/pricing/details/cosmos-db/autoscale-provisioned/ <br>
 https://learn.microsoft.com/ko-kr/azure/cosmos-db/continuous-backup-restore-introduction <br>
 https://learn.microsoft.com/ko-kr/azure/cosmos-db/periodic-backup-restore-introduction <br>
