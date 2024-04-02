@@ -20,14 +20,12 @@
 - 기존 계정에 하용되는 기본 백업 모드로, 백업이 정기적 간격을 두고 수행되며 지원 팀을 대상으로 요청을 만들면 데이터가 복원됩니다.
 - 기본적으로 4시간마다 데이터베이스와 전체 백업을 자동으로 수행하며 기본적으로 항상 2개의 최신 백업만 저장됩니다. (변경 가능)
 - 지정된 프로비전된 처리량 컨테이너 또는 공유 처리량 데이터베이스의 기존 스냅샷을 30일 동안 유지
-
-컨테이너 또는 데이터베이스가 삭제되면 Azure Cosmos DB는 지정된 프로비전된 처리량 컨테이너 또는 공유 처리량 데이터베이스의 기존 스냅샷을 30일 동안 유지합니다.
-    
-실제 데이터는 Cosmos DB내에, 백업은 동일지역 Azure Blob Storage에 GRS로 
-
+- 실제 데이터는 Cosmos DB내에, 백업은 동일지역 Azure Blob Storage에 GRS로 
 
 ref)
 https://azure.microsoft.com/ko-kr/pricing/details/cosmos-db/autoscale-provisioned/ <br>
 https://learn.microsoft.com/ko-kr/azure/cosmos-db/continuous-backup-restore-introduction <br>
 https://learn.microsoft.com/ko-kr/azure/cosmos-db/periodic-backup-restore-introduction <br>
 
+
+## Appservice Backup
