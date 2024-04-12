@@ -1,4 +1,4 @@
-# 👨‍🎓💻 Internship
+# 👨‍🎓💻 OJT
 
 
 ## Azure Administrator Associate(104)
