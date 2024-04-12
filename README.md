@@ -24,3 +24,6 @@
 
 ## Azure Landingzone
 - [Landingzone](./docs/landingzone.md)
+
+## Azure Designing Microsoft Azure Infrastructure(305)
+- [Azure 305](./docs/305.md)
