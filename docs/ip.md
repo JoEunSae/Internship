@@ -43,5 +43,20 @@
 **192.0.0.0 ~ 223.255.255.255의 주소를 가질 수 있다.**
 **네트워크 주소를 표현하는 부분이 3개의 옥텟, 호스트 주소를 나타낼 수 있는 부분이 1개의 옥텟으로 구성**
 
-### Classful 과 CIDR
+## Classful 과 CIDR
+
+### Classful
+- 네트워크 주소와 호스트 주소를 구분짓는 구분자(서브넷 마스크)가 없더라도 맨 앞 자리 숫자만 보면 해당 주소가 어느 클래스에 속해있는지 구분할 수 있다. 
+
+### CIDR
+- **CIDR(Classless Inter-Domain Routing) 클래스가 존재하지 않는 도메인간 라우팅 기법을 의미한다.**
+
+#### 서브넷 마스크
+- IP 주소를 통해 어느 클래스에 속하는지 확인할 수 있었던 클래스풀과는 달리, 네트워크와 호스트 주소를 나누는 구분자(서브넷 마스크)를 사용한다.
+
+![image](https://github.com/JoEunSae/Internship/assets/83803199/85816ea0-7b06-4e45-99cc-b0d44eb6491c)
+
+#### CIDR 표기법
+
+![image](https://github.com/JoEunSae/Internship/assets/83803199/35552827-18d1-44d1-ad42-f46c1360b7ef)
 
