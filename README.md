@@ -1,6 +1,5 @@
 # 👨‍🎓💻 OJT
 
-
 ## Azure Administrator Associate(104)
 - [azure 104](./docs/104.md)
 
@@ -30,3 +29,8 @@
 
 ## IP주소
 - [IP](./docs/ip.md)
+
+---
+
+## 포트포워딩
+- [Portforwarding](./docs/port.md)
